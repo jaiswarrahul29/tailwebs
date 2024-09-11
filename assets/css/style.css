@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body {
+  background-color: rgb(229, 229, 229);
+}
+
+#home {
+  padding-bottom: 50px;
+}
+#home .navbar .container-fluid .navbar-brand {
+  color: red;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+#home .navbar .container-fluid .right button i {
+  font-size: 15px;
+}
+#home .table-section {
+  padding-top: 1rem;
+}
+#home .table-section #datatable_wrapper {
+  width: 90%;
+  margin: auto;
+}
+#home .table-section #datatable_wrapper .dt-layout-row {
+  margin-bottom: 0px;
+  border-radius: 5px;
+}
+#home .table-section #datatable_wrapper .dt-layout-row:first-child, #home .table-section #datatable_wrapper .dt-layout-row:last-child {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #afafaf;
+}
+#home .table-section #datatable_wrapper .dt-layout-row .dt-length,
+#home .table-section #datatable_wrapper .dt-layout-row .dt-search {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+#home .table-section #datatable_wrapper .dt-layout-row .dt-length select,
+#home .table-section #datatable_wrapper .dt-layout-row .dt-length input,
+#home .table-section #datatable_wrapper .dt-layout-row .dt-search select,
+#home .table-section #datatable_wrapper .dt-layout-row .dt-search input {
+  border-radius: 0px;
+  padding: 5px;
+}
+#home .table-section .table thead tr th {
+  padding: 10px 20px;
+  border: 1px solid rgb(175, 175, 175);
+}
+#home .table-section .table tbody tr td {
+  padding: 10px 20px;
+  border: 1px solid rgb(175, 175, 175);
+}
+#home .table-section .table tbody tr td:last-child a i {
+  font-size: 16px;
+  padding: 3px 5px;
+}
+
+.alertSection {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+}
+
+#loginSection {
+  background-color: rgb(221, 221, 221);
+  height: 100vh;
+  width: 100%;
+}
+#loginSection .logo h6 {
+  font-size: 30px;
+  color: red;
+}
+#loginSection .loginView {
+  width: 100%;
+  max-width: 600px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#loginSection .loginView form .loginBtn {
+  background-color: #303030;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+}
+#loginSection .loginView form .loginBtn:hover {
+  background-color: #202020;
+}
+#loginSection .loginView form .passwordField {
+  position: relative;
+}
+#loginSection .loginView form .passwordField .show-hide-eye {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+#loginSection .loginView form .passwordField .show-hide-eye button {
+  border: none;
+  padding: 5px;
+  background-color: transparent;
+}
+#loginSection .loginView form .passwordField .show-hide-eye .hidePassword {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
