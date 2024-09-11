@@ -1,61 +1,60 @@
-###################
-How to Setup Code
-###################
+==============================
+CodeIgniter 3 Project Setup Guide
+==============================
 
-*******************
-Step 1
-*******************
+Welcome! This guide will help you set up the CodeIgniter 3 project on your local machine or live server.
 
-Download the zip file of this code which contain code and database with name "tailwebs"
+Requirements
+------------
+- PHP 7.2 or above
+- MySQL
+- Apache/Nginx (Optional for local setup)
+- Composer (Optional)
 
-**************************
-Step 2
-**************************
+Setup Instructions
+==================
 
-Paste the code into your server or localhost using XAMPP Server
+1. **Download and Extract the Project**
+   
+   - Download the ZIP file and extract it to your desired folder (e.g., `htdocs` for XAMPP or `www` for WAMP).
 
+2. **Database Setup**
+   
+   - Import the `tailwebs.sql` file using phpMyAdmin or MySQL client.
+   - Create a new database and import the file.
 
-*******************
-Server Requirements
-*******************
+3. **Configure `base_url`**
+   
+   - Open `application/config/config.php` and update:
+   
+     .. code-block:: php
+     
+        $config['base_url'] = 'http://localhost/your_project_folder/';  # Localhost example
 
-PHP version 5.6 or newer is recommended.
+4. **Configure Database**
+   
+   - Open `application/config/database.php` and set your database details:
+   
+     .. code-block:: php
+     
+        $db['default'] = array(
+            'hostname' => 'localhost',
+            'username' => 'your_db_username',
+            'password' => 'your_db_password',
+            'database' => 'your_database_name',
+            'dbdriver' => 'mysqli'
+        );
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+5. **Run the Project**
 
-************
-Installation
-************
+   - Open your browser and visit:
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+     - Localhost: `http://localhost/your_project_folder/`
+     - Live Server: `https://www.yourdomain.com/`
 
-*******
-License
-*******
+Troubleshooting
+===============
+- **404 Error**: Check your `base_url`.
+- **Database Connection Error**: Verify database credentials and that MySQL is running.
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+Now you're all set!
